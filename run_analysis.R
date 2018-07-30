@@ -124,7 +124,7 @@ tidy<-aggregate(. ~subject + activity, finaldata, mean)
 tidy<-tidy[order(tidy$subject,tidy$activity),]
 View(tidy)
 #writing it in a csv file, UCIHARdata.csv contains the tidy data set
-write.table(tidy, file = "UCIHARdata.csv",row.name=FALSE)
+write.table(tidy, file = "UCIHARdata.txt",row.name=FALSE)
   
    #creating codebook
 library(dataMaid)
